@@ -1,0 +1,15 @@
+<% include ./partials/header %>
+
+<div class="container">
+    <h1 class=form-header>Login</h1>
+
+    <form action="/login" method="POST">
+        <div class="form-group form-input align-self-center">
+            <input class="form-control form-input" type="text" name="username" placeholder="Username">
+            <input class="form-control form-input" type="password" name="password" placeholder="Password">
+            <input class="btn btn-info form-btn" type="submit" value="Login">
+        </div>
+    </form>
+</div>
+
+<% include ./partials/footer %>
