@@ -28,3 +28,58 @@
     margin:0 15px;
 }
 
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.icon-text {
+    letter-spacing: 2px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+.icon-small {
+    font-size: 150%;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+.hero-img {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(https://www.universetoday.com/wp-content/uploads/2009/09/earthmap.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://www.universetoday.com/wp-content/uploads/2009/09/earthmap.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 65vh;
+    background-attachment: fixed;
+}
+
+.hero-text-box {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+.jumbotron h1 {
+    font-size: 50px;
+}
+
+.jumbotron p {
+    font-size: 16px;
+}
+
+.jumbotron {
+    padding: 24px 30px;
+}
+
+.form-search {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
