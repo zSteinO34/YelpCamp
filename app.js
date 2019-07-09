@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 var express        = require("express"),
     app            = express(),
     bodyParser     = require("body-parser"),
@@ -12,6 +14,7 @@ var express        = require("express"),
     
 var campgroundRoutes = require("./routes/campgrounds"),
     commentRoutes    = require("./routes/comments"),
+    reviewRoutes     = require("./routes/reviews"),
     authRoutes       = require("./routes/auth");
     
 // mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true});
@@ -51,6 +54,7 @@ app.use(function(req, res, next){
 
 app.use("/campgrounds", campgroundRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
+app.use("/campgrounds/:id/reviews", reviewRoutes);
 app.use(authRoutes);
 
 // =======================================================
